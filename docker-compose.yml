@@ -1,0 +1,14 @@
+version: '3'
+services:
+  monkedao-discord-bot:
+    container_name: monkedao-discord-bot
+    build:
+      context: .
+    env_file:
+      - .env
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+          max-size: "50m"
+          max-file: "5"

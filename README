@@ -1,0 +1,29 @@
+# MonkeDAO Discord Bot
+
+Discord bot that removes reactions on specific channels based on specific roles.
+
+When a user reacts on a message in channel "#test", the bot will check the user's role and if they have a given role it will remove their reaction.
+
+There is "/clean-reactions" command that allow admins to cleanup reactions at any point in time based on user roles.
+
+## Prequesites
+- Python 3
+
+## How to run
+
+1. Add `.env`
+
+```bash
+DISCORD_TOKEN=YourDiscordTokenHere
+DISCORD_CHANNEL=test
+DISCORD_ROLE=Member
+```
+
+2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+3. Run `bot.py`
+
+
